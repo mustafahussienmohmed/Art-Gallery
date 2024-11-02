@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* إضافة أي أنماط مخصصة هنا */
+
+:root {
+  --background: #ffffff;
+  --foreground: #f7faf7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #faf7f7;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
